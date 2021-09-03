@@ -41,6 +41,12 @@ Partial Class Form1
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,7 +76,7 @@ Partial Class Form1
         '
         'CMBservicio
         '
-        Me.CMBservicio.FormattingEnabled = True
+        Me.CMBservicio.IntegralHeight = False
         Me.CMBservicio.Items.AddRange(New Object() {"Residencial", "Industrial"})
         Me.CMBservicio.Location = New System.Drawing.Point(360, 103)
         Me.CMBservicio.Name = "CMBservicio"
@@ -174,9 +180,9 @@ Partial Class Form1
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.DodgerBlue
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Location = New System.Drawing.Point(36, 295)
+        Me.GroupBox2.Location = New System.Drawing.Point(36, 317)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(626, 250)
+        Me.GroupBox2.Size = New System.Drawing.Size(1230, 253)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Resultados"
@@ -185,7 +191,7 @@ Partial Class Form1
         '
         Me.BTNcalcular.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BTNcalcular.ForeColor = System.Drawing.Color.White
-        Me.BTNcalcular.Location = New System.Drawing.Point(807, 345)
+        Me.BTNcalcular.Location = New System.Drawing.Point(917, 153)
         Me.BTNcalcular.Name = "BTNcalcular"
         Me.BTNcalcular.Size = New System.Drawing.Size(92, 58)
         Me.BTNcalcular.TabIndex = 2
@@ -194,13 +200,15 @@ Partial Class Form1
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.DodgerBlue
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
-        Me.DataGridView1.Location = New System.Drawing.Point(19, 39)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
+        Me.DataGridView1.GridColor = System.Drawing.Color.Thistle
+        Me.DataGridView1.Location = New System.Drawing.Point(19, 21)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(576, 176)
+        Me.DataGridView1.Size = New System.Drawing.Size(1170, 211)
         Me.DataGridView1.TabIndex = 1
         '
         'Column1
@@ -224,13 +232,61 @@ Partial Class Form1
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 125
         '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Tipo de Traifa"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Pago Inicial"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Descuento"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Pago Total"
+        Me.Column7.MinimumWidth = 6
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 125
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(799, 153)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(92, 56)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(1049, 153)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(92, 56)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Salir"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global._201903573_COBROLUZ.My.Resources.Resources.depositphotos_12140758_stock_photo_idea_concept
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1132, 609)
+        Me.ClientSize = New System.Drawing.Size(1278, 609)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BTNcalcular)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -264,4 +320,10 @@ Partial Class Form1
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

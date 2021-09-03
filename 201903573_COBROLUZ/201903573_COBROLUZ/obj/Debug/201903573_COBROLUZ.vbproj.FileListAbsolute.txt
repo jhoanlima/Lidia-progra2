@@ -10,3 +10,4 @@ C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_COBROLUZ\201
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_COBROLUZ\201903573_COBROLUZ\obj\Debug\201903573_COBROLUZ.exe
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_COBROLUZ\201903573_COBROLUZ\obj\Debug\201903573_COBROLUZ.xml
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_COBROLUZ\201903573_COBROLUZ\obj\Debug\201903573_COBROLUZ.pdb
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_COBROLUZ\201903573_COBROLUZ\obj\Debug\_201903573_COBROLUZ.Form2.resources
