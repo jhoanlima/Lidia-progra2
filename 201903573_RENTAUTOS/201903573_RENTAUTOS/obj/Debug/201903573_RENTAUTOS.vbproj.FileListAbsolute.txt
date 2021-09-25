@@ -1,0 +1,12 @@
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\bin\Debug\201903573_RENTAUTOS.exe.config
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\bin\Debug\201903573_RENTAUTOS.exe
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\bin\Debug\201903573_RENTAUTOS.pdb
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\bin\Debug\201903573_RENTAUTOS.xml
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.vbproj.AssemblyReference.cache
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\_201903573_RENTAUTOS.Form1.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\_201903573_RENTAUTOS.Resources.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.vbproj.GenerateResource.cache
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.vbproj.CoreCompileInputs.cache
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.exe
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.xml
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\201903573_RENTAUTOS\201903573_RENTAUTOS\obj\Debug\201903573_RENTAUTOS.pdb

@@ -23,31 +23,36 @@ Partial Class registro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TXTcontraseña = New System.Windows.Forms.TextBox()
+        Me.TXTnacimiento = New System.Windows.Forms.TextBox()
+        Me.TXTusuario = New System.Windows.Forms.TextBox()
+        Me.TXTapellido = New System.Windows.Forms.TextBox()
         Me.TXTnombre = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BTNregistro2 = New System.Windows.Forms.Button()
+        Me.BTNregresar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.GroupBox1.Controls.Add(Me.BTNregistro2)
+        Me.GroupBox1.Controls.Add(Me.TXTcontraseña)
+        Me.GroupBox1.Controls.Add(Me.TXTnacimiento)
+        Me.GroupBox1.Controls.Add(Me.TXTusuario)
+        Me.GroupBox1.Controls.Add(Me.TXTapellido)
         Me.GroupBox1.Controls.Add(Me.TXTnombre)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(490, 75)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(432, 517)
@@ -55,58 +60,45 @@ Partial Class registro
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingresar datos"
         '
-        'Label1
+        'TXTcontraseña
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.Control
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label1.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(65, 156)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 23)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Nombre"
+        Me.TXTcontraseña.Location = New System.Drawing.Point(161, 363)
+        Me.TXTcontraseña.Name = "TXTcontraseña"
+        Me.TXTcontraseña.Size = New System.Drawing.Size(217, 37)
+        Me.TXTcontraseña.TabIndex = 10
         '
-        'Label2
+        'TXTnacimiento
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.Control
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label2.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(65, 211)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 23)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Apellido"
+        Me.TXTnacimiento.Location = New System.Drawing.Point(161, 292)
+        Me.TXTnacimiento.Name = "TXTnacimiento"
+        Me.TXTnacimiento.Size = New System.Drawing.Size(121, 37)
+        Me.TXTnacimiento.TabIndex = 9
         '
-        'Label3
+        'TXTusuario
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.Control
-        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label3.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(65, 267)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 23)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Usuario"
+        Me.TXTusuario.Location = New System.Drawing.Point(161, 231)
+        Me.TXTusuario.Name = "TXTusuario"
+        Me.TXTusuario.Size = New System.Drawing.Size(217, 37)
+        Me.TXTusuario.TabIndex = 8
         '
-        'Label4
+        'TXTapellido
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.Control
-        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label4.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(39, 317)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 23)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Nacimiento"
+        Me.TXTapellido.Location = New System.Drawing.Point(161, 172)
+        Me.TXTapellido.Name = "TXTapellido"
+        Me.TXTapellido.Size = New System.Drawing.Size(217, 37)
+        Me.TXTapellido.TabIndex = 7
+        '
+        'TXTnombre
+        '
+        Me.TXTnombre.Location = New System.Drawing.Point(161, 101)
+        Me.TXTnombre.Name = "TXTnombre"
+        Me.TXTnombre.Size = New System.Drawing.Size(217, 37)
+        Me.TXTnombre.TabIndex = 6
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.SystemColors.Control
+        Me.Label5.BackColor = System.Drawing.Color.LightSkyBlue
         Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label5.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(39, 372)
@@ -115,40 +107,74 @@ Partial Class registro
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Contraseña"
         '
-        'TXTnombre
+        'Label4
         '
-        Me.TXTnombre.Location = New System.Drawing.Point(161, 157)
-        Me.TXTnombre.Name = "TXTnombre"
-        Me.TXTnombre.Size = New System.Drawing.Size(217, 22)
-        Me.TXTnombre.TabIndex = 6
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label4.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(39, 301)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(104, 23)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Nacimiento"
         '
-        'TextBox1
+        'Label3
         '
-        Me.TextBox1.Location = New System.Drawing.Point(161, 211)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(217, 22)
-        Me.TextBox1.TabIndex = 7
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label3.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(66, 240)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 23)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Usuario"
         '
-        'TextBox2
+        'Label2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(161, 270)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(217, 22)
-        Me.TextBox2.TabIndex = 8
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label2.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(66, 181)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(77, 23)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Apellido"
         '
-        'TextBox3
+        'Label1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(161, 317)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 22)
-        Me.TextBox3.TabIndex = 9
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label1.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(65, 110)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(78, 23)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Nombre"
         '
-        'TextBox4
+        'BTNregistro2
         '
-        Me.TextBox4.Location = New System.Drawing.Point(161, 375)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(217, 22)
-        Me.TextBox4.TabIndex = 10
+        Me.BTNregistro2.BackColor = System.Drawing.Color.Azure
+        Me.BTNregistro2.Location = New System.Drawing.Point(110, 428)
+        Me.BTNregistro2.Name = "BTNregistro2"
+        Me.BTNregistro2.Size = New System.Drawing.Size(199, 60)
+        Me.BTNregistro2.TabIndex = 11
+        Me.BTNregistro2.Text = "REGISTRARSE"
+        Me.BTNregistro2.UseVisualStyleBackColor = False
+        '
+        'BTNregresar
+        '
+        Me.BTNregresar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BTNregresar.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNregresar.Location = New System.Drawing.Point(712, 647)
+        Me.BTNregresar.Name = "BTNregresar"
+        Me.BTNregresar.Size = New System.Drawing.Size(199, 60)
+        Me.BTNregresar.TabIndex = 12
+        Me.BTNregresar.Text = "REGRESAR"
+        Me.BTNregresar.UseVisualStyleBackColor = False
         '
         'registro
         '
@@ -157,6 +183,7 @@ Partial Class registro
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.registro
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(957, 719)
+        Me.Controls.Add(Me.BTNregresar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "registro"
         Me.Text = "registro"
@@ -172,9 +199,11 @@ Partial Class registro
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TXTcontraseña As TextBox
+    Friend WithEvents TXTnacimiento As TextBox
+    Friend WithEvents TXTusuario As TextBox
+    Friend WithEvents TXTapellido As TextBox
     Friend WithEvents TXTnombre As TextBox
+    Friend WithEvents BTNregistro2 As Button
+    Friend WithEvents BTNregresar As Button
 End Class
