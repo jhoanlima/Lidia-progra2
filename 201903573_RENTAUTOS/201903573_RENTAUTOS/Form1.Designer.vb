@@ -295,7 +295,7 @@ Partial Class Form1
         Me.MenuPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProcesosToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.MenuPrincipal.Name = "MenuPrincipal"
-        Me.MenuPrincipal.Size = New System.Drawing.Size(1402, 28)
+        Me.MenuPrincipal.Size = New System.Drawing.Size(1338, 28)
         Me.MenuPrincipal.TabIndex = 5
         Me.MenuPrincipal.Text = "MenuStrip1"
         '
@@ -351,7 +351,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global._201903573_RENTAUTOS.My.Resources.Resources.rentcar
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1402, 994)
+        Me.ClientSize = New System.Drawing.Size(1338, 994)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BTNcalcular)
         Me.Controls.Add(Me.GroupBox2)

@@ -19,8 +19,7 @@ Module Module1
     Public porcentajeTarjeta As Double
 
     Public fila As Byte = 0
-
-    Sub Calcular(TipoMarca As String, NoDias As Integer, efectivo As Double, tarjeta As Double)
+    Sub verificar()
         porcentajeEfectivo = Val(Form1.TXTporcentajeEfectivo.Text)
         porcentajeTarjeta = Val(Form1.TXTporcentajeTarjeta.Text)
 
@@ -54,9 +53,12 @@ Module Module1
                 MsgBox("ERROR, ingreso incorrecto del porcentaje de forma de pago")
                 Form1.TXTporcentajeEfectivo.Focus() : Exit Sub
             End If
-
+            ' Para mostrar los datos
+            Form1.DataGridView1.Rows.Add(placa(fila), marca(fila), dias(fila), pagoParcial(fila), descuento(fila), recargo(fila), pagoFinal(fila))
         End If
         fila = fila + 1
+    End Sub
+    Sub Calcular(TipoMarca As String, NoDias As Integer, efectivo As Double, tarjeta As Double)
 
         Select Case TipoMarca
             Case "Honda"
@@ -84,8 +86,7 @@ Module Module1
         End If
 
         pagoFinal(fila) = pagoParcial(fila) - descuento(fila) + recargo(fila)
-        ' Para mostrar los datos
-        Form1.DataGridView1.Rows.Add(placa(fila), marca(fila), dias(fila), pagoParcial(fila), descuento(fila), recargo(fila), pagoFinal(fila))
+
     End Sub
 
     Sub limpiarvector()

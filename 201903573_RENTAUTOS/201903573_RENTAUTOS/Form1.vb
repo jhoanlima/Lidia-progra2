@@ -22,6 +22,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BTNcalcular.Click
 
         Calcular(CMBmarca.Text, Val(TXTdías.Text), Val(TXTporcentajeEfectivo.Text), Val(TXTporcentajeTarjeta.Text))
+        verificar()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
