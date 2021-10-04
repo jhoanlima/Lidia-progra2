@@ -73,6 +73,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administracion.Designer.vb">
+      <DependentUpon>administracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="administracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente.Designer.vb">
+      <DependentUpon>cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtorial.Designer.vb">
+      <DependentUpon>edtorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edtorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,13 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="libros.Designer.vb">
+      <DependentUpon>libros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="libros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,16 +120,58 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="perfil.Designer.vb">
+      <DependentUpon>perfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="perfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presor.Designer.vb">
+      <DependentUpon>presor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="presor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestados.Designer.vb">
+      <DependentUpon>Prestados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestados.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="registro.Designer.vb">
       <DependentUpon>registro.vb</DependentUpon>
     </Compile>
     <Compile Include="registro.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="reportes.Designer.vb">
+      <DependentUpon>reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salir.Designer.vb">
+      <DependentUpon>salir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salir.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="administracion.resx">
+      <DependentUpon>administracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtorial.resx">
+      <DependentUpon>edtorial.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="libros.resx">
+      <DependentUpon>libros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -112,8 +179,23 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="perfil.resx">
+      <DependentUpon>perfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presor.resx">
+      <DependentUpon>presor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestados.resx">
+      <DependentUpon>Prestados.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="registro.resx">
       <DependentUpon>registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes.resx">
+      <DependentUpon>reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salir.resx">
+      <DependentUpon>salir.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +215,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\registro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administracion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aministracion 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editorial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

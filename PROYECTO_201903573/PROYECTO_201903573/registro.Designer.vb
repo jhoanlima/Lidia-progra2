@@ -23,8 +23,8 @@ Partial Class registro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BTNregistro2 = New System.Windows.Forms.Button()
         Me.TXTcontraseña = New System.Windows.Forms.TextBox()
-        Me.TXTnacimiento = New System.Windows.Forms.TextBox()
         Me.TXTusuario = New System.Windows.Forms.TextBox()
         Me.TXTapellido = New System.Windows.Forms.TextBox()
         Me.TXTnombre = New System.Windows.Forms.TextBox()
@@ -33,17 +33,17 @@ Partial Class registro
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BTNregistro2 = New System.Windows.Forms.Button()
         Me.BTNregresar = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.BTNregistro2)
         Me.GroupBox1.Controls.Add(Me.TXTcontraseña)
-        Me.GroupBox1.Controls.Add(Me.TXTnacimiento)
         Me.GroupBox1.Controls.Add(Me.TXTusuario)
         Me.GroupBox1.Controls.Add(Me.TXTapellido)
         Me.GroupBox1.Controls.Add(Me.TXTnombre)
@@ -60,19 +60,22 @@ Partial Class registro
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingresar datos"
         '
+        'BTNregistro2
+        '
+        Me.BTNregistro2.BackColor = System.Drawing.Color.Azure
+        Me.BTNregistro2.Location = New System.Drawing.Point(110, 428)
+        Me.BTNregistro2.Name = "BTNregistro2"
+        Me.BTNregistro2.Size = New System.Drawing.Size(199, 60)
+        Me.BTNregistro2.TabIndex = 11
+        Me.BTNregistro2.Text = "REGISTRARSE"
+        Me.BTNregistro2.UseVisualStyleBackColor = False
+        '
         'TXTcontraseña
         '
         Me.TXTcontraseña.Location = New System.Drawing.Point(161, 363)
         Me.TXTcontraseña.Name = "TXTcontraseña"
         Me.TXTcontraseña.Size = New System.Drawing.Size(217, 37)
         Me.TXTcontraseña.TabIndex = 10
-        '
-        'TXTnacimiento
-        '
-        Me.TXTnacimiento.Location = New System.Drawing.Point(161, 292)
-        Me.TXTnacimiento.Name = "TXTnacimiento"
-        Me.TXTnacimiento.Size = New System.Drawing.Size(121, 37)
-        Me.TXTnacimiento.TabIndex = 9
         '
         'TXTusuario
         '
@@ -155,16 +158,6 @@ Partial Class registro
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre"
         '
-        'BTNregistro2
-        '
-        Me.BTNregistro2.BackColor = System.Drawing.Color.Azure
-        Me.BTNregistro2.Location = New System.Drawing.Point(110, 428)
-        Me.BTNregistro2.Name = "BTNregistro2"
-        Me.BTNregistro2.Size = New System.Drawing.Size(199, 60)
-        Me.BTNregistro2.TabIndex = 11
-        Me.BTNregistro2.Text = "REGISTRARSE"
-        Me.BTNregistro2.UseVisualStyleBackColor = False
-        '
         'BTNregresar
         '
         Me.BTNregresar.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -175,6 +168,14 @@ Partial Class registro
         Me.BTNregresar.TabIndex = 12
         Me.BTNregresar.Text = "REGRESAR"
         Me.BTNregresar.UseVisualStyleBackColor = False
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Berlin Sans FB", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Location = New System.Drawing.Point(161, 301)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 37)
+        Me.DateTimePicker1.TabIndex = 12
         '
         'registro
         '
@@ -200,10 +201,10 @@ Partial Class registro
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TXTcontraseña As TextBox
-    Friend WithEvents TXTnacimiento As TextBox
     Friend WithEvents TXTusuario As TextBox
     Friend WithEvents TXTapellido As TextBox
     Friend WithEvents TXTnombre As TextBox
     Friend WithEvents BTNregistro2 As Button
     Friend WithEvents BTNregresar As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

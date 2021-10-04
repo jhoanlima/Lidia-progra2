@@ -54,8 +54,8 @@ Partial Class Form1
         '
         'BTNregistrarse
         '
-        Me.BTNregistrarse.BackColor = System.Drawing.Color.Navy
-        Me.BTNregistrarse.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BTNregistrarse.BackColor = System.Drawing.Color.AliceBlue
+        Me.BTNregistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BTNregistrarse.Location = New System.Drawing.Point(185, 291)
         Me.BTNregistrarse.Name = "BTNregistrarse"
         Me.BTNregistrarse.Size = New System.Drawing.Size(143, 38)
