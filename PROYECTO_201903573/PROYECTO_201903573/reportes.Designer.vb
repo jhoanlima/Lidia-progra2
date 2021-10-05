@@ -23,10 +23,10 @@ Partial Class reportes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,18 +50,6 @@ Partial Class reportes
         Me.DataGridView1.Size = New System.Drawing.Size(878, 221)
         Me.DataGridView1.TabIndex = 0
         '
-        'DataGridView2
-        '
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.CornflowerBlue
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
-        Me.DataGridView2.Location = New System.Drawing.Point(69, 375)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(878, 245)
-        Me.DataGridView2.TabIndex = 1
-        '
         'Column1
         '
         Me.Column1.HeaderText = "Nombre"
@@ -82,6 +70,18 @@ Partial Class reportes
         Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 125
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.CornflowerBlue
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
+        Me.DataGridView2.Location = New System.Drawing.Point(69, 375)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.RowTemplate.Height = 24
+        Me.DataGridView2.Size = New System.Drawing.Size(878, 245)
+        Me.DataGridView2.TabIndex = 1
         '
         'Column4
         '

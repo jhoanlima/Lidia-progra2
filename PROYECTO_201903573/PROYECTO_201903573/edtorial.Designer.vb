@@ -35,6 +35,10 @@ Partial Class edtorial
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BTNregresar = New System.Windows.Forms.Button()
+        Me.TXTtelefono = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BTNlimpiar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DATAeditorial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -50,6 +54,8 @@ Partial Class edtorial
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.GroupBox1.Controls.Add(Me.TXTtelefono)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.TXTeditDireccion)
         Me.GroupBox1.Controls.Add(Me.TXTeditNombre)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -63,14 +69,14 @@ Partial Class edtorial
         '
         'TXTeditDireccion
         '
-        Me.TXTeditDireccion.Location = New System.Drawing.Point(164, 134)
+        Me.TXTeditDireccion.Location = New System.Drawing.Point(159, 104)
         Me.TXTeditDireccion.Name = "TXTeditDireccion"
         Me.TXTeditDireccion.Size = New System.Drawing.Size(292, 27)
         Me.TXTeditDireccion.TabIndex = 4
         '
         'TXTeditNombre
         '
-        Me.TXTeditNombre.Location = New System.Drawing.Point(164, 56)
+        Me.TXTeditNombre.Location = New System.Drawing.Point(159, 26)
         Me.TXTeditNombre.Name = "TXTeditNombre"
         Me.TXTeditNombre.Size = New System.Drawing.Size(292, 27)
         Me.TXTeditNombre.TabIndex = 3
@@ -78,7 +84,7 @@ Partial Class edtorial
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(64, 137)
+        Me.Label3.Location = New System.Drawing.Point(59, 107)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 21)
         Me.Label3.TabIndex = 2
@@ -87,7 +93,7 @@ Partial Class edtorial
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(64, 62)
+        Me.Label2.Location = New System.Drawing.Point(59, 32)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(81, 21)
         Me.Label2.TabIndex = 1
@@ -127,7 +133,7 @@ Partial Class edtorial
         '
         Me.DATAeditorial.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.DATAeditorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DATAeditorial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.Column1})
+        Me.DATAeditorial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.Column1, Me.Column2})
         Me.DATAeditorial.Location = New System.Drawing.Point(65, 351)
         Me.DATAeditorial.Name = "DATAeditorial"
         Me.DATAeditorial.RowHeadersWidth = 51
@@ -160,12 +166,47 @@ Partial Class edtorial
         Me.BTNregresar.Text = "REGRESAR"
         Me.BTNregresar.UseVisualStyleBackColor = False
         '
+        'TXTtelefono
+        '
+        Me.TXTtelefono.Location = New System.Drawing.Point(159, 169)
+        Me.TXTtelefono.Name = "TXTtelefono"
+        Me.TXTtelefono.Size = New System.Drawing.Size(292, 27)
+        Me.TXTtelefono.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(59, 172)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 21)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Telefono:"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Telefono"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'BTNlimpiar
+        '
+        Me.BTNlimpiar.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BTNlimpiar.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BTNlimpiar.Location = New System.Drawing.Point(526, 633)
+        Me.BTNlimpiar.Name = "BTNlimpiar"
+        Me.BTNlimpiar.Size = New System.Drawing.Size(203, 57)
+        Me.BTNlimpiar.TabIndex = 14
+        Me.BTNlimpiar.Text = "Limpiar Entradas"
+        Me.BTNlimpiar.UseVisualStyleBackColor = False
+        '
         'edtorial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.editorial
         Me.ClientSize = New System.Drawing.Size(1259, 702)
+        Me.Controls.Add(Me.BTNlimpiar)
         Me.Controls.Add(Me.BTNregresar)
         Me.Controls.Add(Me.DATAeditorial)
         Me.Controls.Add(Me.BTNeliminar)
@@ -196,4 +237,8 @@ Partial Class edtorial
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents BTNregresar As Button
+    Friend WithEvents TXTtelefono As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents BTNlimpiar As Button
 End Class

@@ -26,6 +26,7 @@ Partial Class cliente
         Me.BTNprestar = New System.Windows.Forms.Button()
         Me.BTNeditarPerfil = New System.Windows.Forms.Button()
         Me.BTNcerrar = New System.Windows.Forms.Button()
+        Me.BTNregresar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BTNprestados
@@ -61,7 +62,7 @@ Partial Class cliente
         Me.BTNeditarPerfil.Name = "BTNeditarPerfil"
         Me.BTNeditarPerfil.Size = New System.Drawing.Size(414, 128)
         Me.BTNeditarPerfil.TabIndex = 2
-        Me.BTNeditarPerfil.Text = "Editar Perdil"
+        Me.BTNeditarPerfil.Text = "Editar Perfil"
         Me.BTNeditarPerfil.UseVisualStyleBackColor = False
         '
         'BTNcerrar
@@ -75,12 +76,25 @@ Partial Class cliente
         Me.BTNcerrar.Text = "Cerrar Sesión"
         Me.BTNcerrar.UseVisualStyleBackColor = False
         '
+        'BTNregresar
+        '
+        Me.BTNregresar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BTNregresar.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNregresar.Location = New System.Drawing.Point(894, 562)
+        Me.BTNregresar.Name = "BTNregresar"
+        Me.BTNregresar.Size = New System.Drawing.Size(199, 60)
+        Me.BTNregresar.TabIndex = 15
+        Me.BTNregresar.Text = "REGRESAR"
+        Me.BTNregresar.UseVisualStyleBackColor = False
+        Me.BTNregresar.UseWaitCursor = True
+        '
         'cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 26.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.cliente
         Me.ClientSize = New System.Drawing.Size(1200, 731)
+        Me.Controls.Add(Me.BTNregresar)
         Me.Controls.Add(Me.BTNcerrar)
         Me.Controls.Add(Me.BTNeditarPerfil)
         Me.Controls.Add(Me.BTNprestar)
@@ -97,4 +111,5 @@ Partial Class cliente
     Friend WithEvents BTNprestar As Button
     Friend WithEvents BTNeditarPerfil As Button
     Friend WithEvents BTNcerrar As Button
+    Friend WithEvents BTNregresar As Button
 End Class

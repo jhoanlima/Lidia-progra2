@@ -154,7 +154,8 @@ VALUES(5,4,0);
 
 select * from Usuario;
 
-
+--login 
+select contrasenia from Usuario where usuario = 'user1';
 /*
 SELECT ed.nombre, COUNT(li.titulo) AS cantidad
 FROM Editorial ed

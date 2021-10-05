@@ -29,6 +29,8 @@ Partial Class Form1
         Me.TXTnombre = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BTNverificar = New System.Windows.Forms.Button()
+        Me.BTNsalir = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,9 +58,9 @@ Partial Class Form1
         '
         Me.BTNregistrarse.BackColor = System.Drawing.Color.AliceBlue
         Me.BTNregistrarse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.BTNregistrarse.Location = New System.Drawing.Point(185, 291)
+        Me.BTNregistrarse.Location = New System.Drawing.Point(143, 291)
         Me.BTNregistrarse.Name = "BTNregistrarse"
-        Me.BTNregistrarse.Size = New System.Drawing.Size(143, 38)
+        Me.BTNregistrarse.Size = New System.Drawing.Size(185, 38)
         Me.BTNregistrarse.TabIndex = 5
         Me.BTNregistrarse.Text = "REGISTRARSE"
         Me.BTNregistrarse.UseVisualStyleBackColor = False
@@ -80,6 +82,7 @@ Partial Class Form1
         Me.TXTcontraseña.Name = "TXTcontraseña"
         Me.TXTcontraseña.Size = New System.Drawing.Size(193, 29)
         Me.TXTcontraseña.TabIndex = 3
+        Me.TXTcontraseña.UseSystemPasswordChar = True
         '
         'TXTnombre
         '
@@ -112,13 +115,39 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Usuario"
         '
+        'BTNverificar
+        '
+        Me.BTNverificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BTNverificar.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNverificar.ForeColor = System.Drawing.Color.Black
+        Me.BTNverificar.Location = New System.Drawing.Point(757, 408)
+        Me.BTNverificar.Name = "BTNverificar"
+        Me.BTNverificar.Size = New System.Drawing.Size(152, 82)
+        Me.BTNverificar.TabIndex = 6
+        Me.BTNverificar.Text = "Verificar Conexion"
+        Me.BTNverificar.UseVisualStyleBackColor = False
+        '
+        'BTNsalir
+        '
+        Me.BTNsalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BTNsalir.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNsalir.ForeColor = System.Drawing.Color.Black
+        Me.BTNsalir.Location = New System.Drawing.Point(30, 417)
+        Me.BTNsalir.Name = "BTNsalir"
+        Me.BTNsalir.Size = New System.Drawing.Size(152, 82)
+        Me.BTNsalir.TabIndex = 7
+        Me.BTNsalir.Text = "Salir"
+        Me.BTNsalir.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.Login
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(951, 549)
+        Me.ClientSize = New System.Drawing.Size(951, 571)
+        Me.Controls.Add(Me.BTNsalir)
+        Me.Controls.Add(Me.BTNverificar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -135,4 +164,6 @@ Partial Class Form1
     Friend WithEvents BTNlogin As Button
     Friend WithEvents TXTcontraseña As TextBox
     Friend WithEvents TXTnombre As TextBox
+    Friend WithEvents BTNverificar As Button
+    Friend WithEvents BTNsalir As Button
 End Class

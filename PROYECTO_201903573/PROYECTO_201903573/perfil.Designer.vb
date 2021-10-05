@@ -23,16 +23,16 @@ Partial Class perfil
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TXTnombre = New System.Windows.Forms.TextBox()
-        Me.TXTapellido = New System.Windows.Forms.TextBox()
-        Me.TXTusuario = New System.Windows.Forms.TextBox()
         Me.BTNactualizar = New System.Windows.Forms.Button()
+        Me.TXTusuario = New System.Windows.Forms.TextBox()
+        Me.TXTapellido = New System.Windows.Forms.TextBox()
+        Me.TXTnombre = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BTNregresar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -56,32 +56,43 @@ Partial Class perfil
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Label1
+        'BTNactualizar
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(81, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 23)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre:"
+        Me.BTNactualizar.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BTNactualizar.Location = New System.Drawing.Point(196, 330)
+        Me.BTNactualizar.Name = "BTNactualizar"
+        Me.BTNactualizar.Size = New System.Drawing.Size(176, 68)
+        Me.BTNactualizar.TabIndex = 8
+        Me.BTNactualizar.Text = "Actualizar Datos"
+        Me.BTNactualizar.UseVisualStyleBackColor = False
         '
-        'Label2
+        'TXTusuario
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(80, 141)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 23)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Apellido:"
+        Me.TXTusuario.Location = New System.Drawing.Point(196, 198)
+        Me.TXTusuario.Name = "TXTusuario"
+        Me.TXTusuario.Size = New System.Drawing.Size(258, 29)
+        Me.TXTusuario.TabIndex = 7
         '
-        'Label3
+        'TXTapellido
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(81, 204)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 23)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Usuario:"
+        Me.TXTapellido.Location = New System.Drawing.Point(196, 135)
+        Me.TXTapellido.Name = "TXTapellido"
+        Me.TXTapellido.Size = New System.Drawing.Size(258, 29)
+        Me.TXTapellido.TabIndex = 6
+        '
+        'TXTnombre
+        '
+        Me.TXTnombre.Location = New System.Drawing.Point(196, 71)
+        Me.TXTnombre.Name = "TXTnombre"
+        Me.TXTnombre.Size = New System.Drawing.Size(258, 29)
+        Me.TXTnombre.TabIndex = 5
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(196, 271)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(258, 29)
+        Me.DateTimePicker1.TabIndex = 4
         '
         'Label4
         '
@@ -92,43 +103,32 @@ Partial Class perfil
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Nacimiento:"
         '
-        'DateTimePicker1
+        'Label3
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(196, 271)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(258, 29)
-        Me.DateTimePicker1.TabIndex = 4
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(81, 204)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(77, 23)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Usuario:"
         '
-        'TXTnombre
+        'Label2
         '
-        Me.TXTnombre.Location = New System.Drawing.Point(196, 71)
-        Me.TXTnombre.Name = "TXTnombre"
-        Me.TXTnombre.Size = New System.Drawing.Size(258, 29)
-        Me.TXTnombre.TabIndex = 5
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(80, 141)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(82, 23)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Apellido:"
         '
-        'TXTapellido
+        'Label1
         '
-        Me.TXTapellido.Location = New System.Drawing.Point(196, 135)
-        Me.TXTapellido.Name = "TXTapellido"
-        Me.TXTapellido.Size = New System.Drawing.Size(258, 29)
-        Me.TXTapellido.TabIndex = 6
-        '
-        'TXTusuario
-        '
-        Me.TXTusuario.Location = New System.Drawing.Point(196, 198)
-        Me.TXTusuario.Name = "TXTusuario"
-        Me.TXTusuario.Size = New System.Drawing.Size(258, 29)
-        Me.TXTusuario.TabIndex = 7
-        '
-        'BTNactualizar
-        '
-        Me.BTNactualizar.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BTNactualizar.Location = New System.Drawing.Point(196, 330)
-        Me.BTNactualizar.Name = "BTNactualizar"
-        Me.BTNactualizar.Size = New System.Drawing.Size(176, 68)
-        Me.BTNactualizar.TabIndex = 8
-        Me.BTNactualizar.Text = "Actualizar Datos"
-        Me.BTNactualizar.UseVisualStyleBackColor = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(81, 77)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(83, 23)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nombre:"
         '
         'Button1
         '

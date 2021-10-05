@@ -22,75 +22,60 @@ Partial Class salir
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BTNno = New System.Windows.Forms.Button()
         Me.BTNsi = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout()
+        Me.BTNno = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.Color.LightBlue
-        Me.GroupBox1.Controls.Add(Me.BTNsi)
-        Me.GroupBox1.Controls.Add(Me.BTNno)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(63, 41)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(316, 197)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(68, 31)
+        Me.Label1.Location = New System.Drawing.Point(125, 46)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(200, 37)
+        Me.Label1.Size = New System.Drawing.Size(148, 31)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "¿Desea Salir?"
-        '
-        'BTNno
-        '
-        Me.BTNno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BTNno.ForeColor = System.Drawing.Color.Maroon
-        Me.BTNno.Location = New System.Drawing.Point(172, 124)
-        Me.BTNno.Name = "BTNno"
-        Me.BTNno.Size = New System.Drawing.Size(117, 49)
-        Me.BTNno.TabIndex = 1
-        Me.BTNno.Text = "No"
-        Me.BTNno.UseVisualStyleBackColor = False
+        Me.Label1.Text = "Desea salir?"
         '
         'BTNsi
         '
         Me.BTNsi.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BTNsi.ForeColor = System.Drawing.Color.Green
-        Me.BTNsi.Location = New System.Drawing.Point(33, 124)
+        Me.BTNsi.Location = New System.Drawing.Point(53, 112)
         Me.BTNsi.Name = "BTNsi"
-        Me.BTNsi.Size = New System.Drawing.Size(117, 49)
-        Me.BTNsi.TabIndex = 2
-        Me.BTNsi.Text = "SI"
+        Me.BTNsi.Size = New System.Drawing.Size(128, 53)
+        Me.BTNsi.TabIndex = 1
+        Me.BTNsi.Text = "Si"
         Me.BTNsi.UseVisualStyleBackColor = False
+        '
+        'BTNno
+        '
+        Me.BTNno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BTNno.ForeColor = System.Drawing.Color.Maroon
+        Me.BTNno.Location = New System.Drawing.Point(233, 112)
+        Me.BTNno.Name = "BTNno"
+        Me.BTNno.Size = New System.Drawing.Size(128, 53)
+        Me.BTNno.TabIndex = 2
+        Me.BTNno.Text = "No"
+        Me.BTNno.UseVisualStyleBackColor = False
         '
         'salir
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(18.0!, 37.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 30.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.cliente
-        Me.ClientSize = New System.Drawing.Size(458, 270)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Font = New System.Drawing.Font("Berlin Sans FB", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(7)
+        Me.ClientSize = New System.Drawing.Size(415, 223)
+        Me.Controls.Add(Me.BTNno)
+        Me.Controls.Add(Me.BTNsi)
+        Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Name = "salir"
         Me.Text = "salir"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label1 As Label
     Friend WithEvents BTNsi As Button
     Friend WithEvents BTNno As Button
-    Friend WithEvents Label1 As Label
 End Class

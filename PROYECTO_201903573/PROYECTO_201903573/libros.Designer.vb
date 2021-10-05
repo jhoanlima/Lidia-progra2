@@ -40,6 +40,7 @@ Partial Class libros
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BTNregresar = New System.Windows.Forms.Button()
+        Me.BTNlimpiar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DATAlibros, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -222,6 +223,17 @@ Partial Class libros
         Me.BTNregresar.UseVisualStyleBackColor = False
         Me.BTNregresar.UseWaitCursor = True
         '
+        'BTNlimpiar
+        '
+        Me.BTNlimpiar.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BTNlimpiar.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BTNlimpiar.Location = New System.Drawing.Point(412, 685)
+        Me.BTNlimpiar.Name = "BTNlimpiar"
+        Me.BTNlimpiar.Size = New System.Drawing.Size(203, 57)
+        Me.BTNlimpiar.TabIndex = 15
+        Me.BTNlimpiar.Text = "Limpiar Entradas"
+        Me.BTNlimpiar.UseVisualStyleBackColor = False
+        '
         'libros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
@@ -229,6 +241,7 @@ Partial Class libros
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.libros
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1086, 738)
+        Me.Controls.Add(Me.BTNlimpiar)
         Me.Controls.Add(Me.BTNregresar)
         Me.Controls.Add(Me.DATAlibros)
         Me.Controls.Add(Me.BTNeliminar)
@@ -265,4 +278,5 @@ Partial Class libros
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents BTNregresar As Button
+    Friend WithEvents BTNlimpiar As Button
 End Class

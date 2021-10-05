@@ -17,3 +17,9 @@ C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PRO
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.libros.resources
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.perfil.resources
 C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.reportes.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.presor.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.Prestados.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.salir.resources
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\bin\Debug\System.Data.SqlClient.dll
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\bin\Debug\System.Data.SqlClient.xml
+C:\Users\lidia\OneDrive\Documentos\Programacion 2\Progra2\PROYECTO_201903573\PROYECTO_201903573\obj\Debug\PROYECTO_201903573.vbproj.CopyComplete
