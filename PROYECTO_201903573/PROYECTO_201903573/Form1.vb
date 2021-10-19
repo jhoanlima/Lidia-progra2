@@ -67,7 +67,7 @@ Public Class Form1
             If myConn.State() = 1 Then
                 MsgBox("Se conectó exitosamente a la base de datos")
             Else
-                MsgBox("Algo salió mal :'(")
+                MsgBox("Algo salió mal :(")
             End If
 
             myConn.Close()

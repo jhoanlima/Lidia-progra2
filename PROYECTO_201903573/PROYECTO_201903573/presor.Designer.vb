@@ -35,7 +35,9 @@ Partial Class presor
         Me.BTNregresar = New System.Windows.Forms.Button()
         Me.TXTbuscar = New System.Windows.Forms.TextBox()
         Me.CMBbuscar = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.DATAprestor, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -118,7 +120,7 @@ Partial Class presor
         'BTNbuscar
         '
         Me.BTNbuscar.BackColor = System.Drawing.Color.PaleTurquoise
-        Me.BTNbuscar.Location = New System.Drawing.Point(994, 42)
+        Me.BTNbuscar.Location = New System.Drawing.Point(394, 23)
         Me.BTNbuscar.Name = "BTNbuscar"
         Me.BTNbuscar.Size = New System.Drawing.Size(125, 37)
         Me.BTNbuscar.TabIndex = 4
@@ -140,7 +142,7 @@ Partial Class presor
         '
         'TXTbuscar
         '
-        Me.TXTbuscar.Location = New System.Drawing.Point(616, 46)
+        Me.TXTbuscar.Location = New System.Drawing.Point(16, 27)
         Me.TXTbuscar.Name = "TXTbuscar"
         Me.TXTbuscar.Size = New System.Drawing.Size(210, 29)
         Me.TXTbuscar.TabIndex = 17
@@ -149,10 +151,22 @@ Partial Class presor
         '
         Me.CMBbuscar.FormattingEnabled = True
         Me.CMBbuscar.Items.AddRange(New Object() {"Título", "Catégoria"})
-        Me.CMBbuscar.Location = New System.Drawing.Point(847, 46)
+        Me.CMBbuscar.Location = New System.Drawing.Point(247, 27)
         Me.CMBbuscar.Name = "CMBbuscar"
         Me.CMBbuscar.Size = New System.Drawing.Size(128, 31)
         Me.CMBbuscar.TabIndex = 18
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox1.Controls.Add(Me.CMBbuscar)
+        Me.GroupBox1.Controls.Add(Me.TXTbuscar)
+        Me.GroupBox1.Controls.Add(Me.BTNbuscar)
+        Me.GroupBox1.Location = New System.Drawing.Point(600, 19)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(532, 88)
+        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabStop = False
         '
         'presor
         '
@@ -162,10 +176,8 @@ Partial Class presor
         Me.BackgroundImage = Global.PROYECTO_201903573.My.Resources.Resources.reportes
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1207, 647)
-        Me.Controls.Add(Me.CMBbuscar)
-        Me.Controls.Add(Me.TXTbuscar)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BTNregresar)
-        Me.Controls.Add(Me.BTNbuscar)
         Me.Controls.Add(Me.BTNprestar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DATAprestor)
@@ -175,6 +187,8 @@ Partial Class presor
         Me.Name = "presor"
         Me.Text = "presor"
         CType(Me.DATAprestor, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -193,4 +207,5 @@ Partial Class presor
     Friend WithEvents BTNregresar As Button
     Friend WithEvents TXTbuscar As TextBox
     Friend WithEvents CMBbuscar As ComboBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

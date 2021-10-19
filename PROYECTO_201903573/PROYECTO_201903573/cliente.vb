@@ -1,5 +1,5 @@
 ﻿Public Class cliente
-    Private Sub BTNregresar_Click(sender As Object, e As EventArgs) Handles BTNregresar.Click
+    Private Sub BTNregresar_Click(sender As Object, e As EventArgs)
         Dim formPrincipal As administracion = New administracion
         Me.Hide()
         formPrincipal.Show()

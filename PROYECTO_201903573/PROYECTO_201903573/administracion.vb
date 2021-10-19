@@ -1,6 +1,8 @@
 ﻿Public Class administracion
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BTNgestionarLibros.Click
-
+        Dim formPrincipal As libros = New libros
+        Me.Hide()
+        formPrincipal.Show()
     End Sub
 
     Private Sub BTNreportes_Click(sender As Object, e As EventArgs) Handles BTNreportes.Click
