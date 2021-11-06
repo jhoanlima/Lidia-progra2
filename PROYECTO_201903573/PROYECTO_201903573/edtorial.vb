@@ -40,6 +40,7 @@ Public Class edtorial
     Private Sub BTNeliminar_Click(sender As Object, e As EventArgs) Handles BTNeliminar.Click
         Dim nombre As String = TXTeditNombre.Text
         Dim direccion As String = TXTeditDireccion.Text
+        Dim telefono As String = TXTtelefono.Text
 
         Dim consulta As String = "delete from Editorial where nombre = '" + nombre + "'"
         Try
@@ -50,6 +51,7 @@ Public Class edtorial
                 myCmd = New SqlCommand(consulta, myConn)
                 myCmd.ExecuteNonQuery()
                 MsgBox("Se elimino exitosamente")
+
             Else
                 MsgBox("Algo salió mal")
             End If
@@ -72,6 +74,7 @@ Public Class edtorial
                 myCmd = New SqlCommand(consulta, myConn)
                 myCmd.ExecuteNonQuery()
                 MsgBox("Se modifico exitosamente")
+
             Else
                 MsgBox("Algo salió mal")
             End If
@@ -82,15 +85,10 @@ Public Class edtorial
     End Sub
 
     Private Sub BTNlimpiar_Click(sender As Object, e As EventArgs) Handles BTNlimpiar.Click
-        TXTeditDireccion.Clear()
-        TXTeditNombre.Clear()
-        TXTtelefono.Clear()
+        Limpiar()
     End Sub
 
     Private Sub edtorial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim name() As String
-        Dim direcciones() As String
-        Dim cel() As String
         Try
             myConn = New SqlConnection("Initial Catalog=DB_201903573;" &
               "Data Source=DESKTOP-4S91T6L\SQLEXPRESS;Integrated Security=SSPI;")
@@ -99,16 +97,25 @@ Public Class edtorial
             Dim adapter As SqlDataAdapter = New SqlDataAdapter(myCmd1)
             Dim dataTable As DataTable = New DataTable()
             adapter.Fill(dataTable)
-            'PENDIENTE, solo muestra un dato
-            ReDim Preserve name(1)
-            ReDim Preserve direcciones(1)
-            ReDim Preserve cel(1)
-            name(0) = dataTable.Rows(0)(1)
-            direcciones(0) = dataTable.Rows(0)(2)
-            cel(0) = dataTable.Rows(0)(3)
-            DATAeditorial.Rows.Add(name(0), direcciones(0), cel(0))
+            For Each row As DataRow In dataTable.Rows
+                Dim nombre = row.ItemArray(1)
+                Dim direccion = row.ItemArray(2)
+                Dim telefono = row.ItemArray(3)
+                DATAeditorial.Rows.Add(nombre, direccion, telefono)
+            Next
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub DATAeditorial_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DATAeditorial.CellContentClick
+
+    End Sub
+    Private Sub Limpiar()
+        TXTeditDireccion.Clear()
+        TXTeditNombre.Clear()
+        TXTtelefono.Clear()
+    End Sub
+
+
 End Class

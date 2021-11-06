@@ -26,8 +26,10 @@ Partial Class libros
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CMBgenero = New System.Windows.Forms.ComboBox()
+        Me.TXTcantidad = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.CMBeditorial = New System.Windows.Forms.ComboBox()
-        Me.TXTgenero = New System.Windows.Forms.TextBox()
         Me.TXTautor = New System.Windows.Forms.TextBox()
         Me.TXTtitulo = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -48,7 +50,7 @@ Partial Class libros
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(92, 51)
+        Me.Label1.Location = New System.Drawing.Point(92, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 21)
         Me.Label1.TabIndex = 0
@@ -58,7 +60,7 @@ Partial Class libros
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(92, 105)
+        Me.Label2.Location = New System.Drawing.Point(92, 81)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 21)
         Me.Label2.TabIndex = 1
@@ -68,7 +70,7 @@ Partial Class libros
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(92, 154)
+        Me.Label3.Location = New System.Drawing.Point(92, 130)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 21)
         Me.Label3.TabIndex = 2
@@ -78,8 +80,10 @@ Partial Class libros
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.LightBlue
+        Me.GroupBox1.Controls.Add(Me.CMBgenero)
+        Me.GroupBox1.Controls.Add(Me.TXTcantidad)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.CMBeditorial)
-        Me.GroupBox1.Controls.Add(Me.TXTgenero)
         Me.GroupBox1.Controls.Add(Me.TXTautor)
         Me.GroupBox1.Controls.Add(Me.TXTtitulo)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -93,27 +97,47 @@ Partial Class libros
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.UseWaitCursor = True
         '
+        'CMBgenero
+        '
+        Me.CMBgenero.FormattingEnabled = True
+        Me.CMBgenero.Items.AddRange(New Object() {"Aventuras", "Ciencia Ficcion", "Policiaco", "Terror y misterio", "Romantica", "Humor", "Suspenso"})
+        Me.CMBgenero.Location = New System.Drawing.Point(179, 127)
+        Me.CMBgenero.Name = "CMBgenero"
+        Me.CMBgenero.Size = New System.Drawing.Size(245, 28)
+        Me.CMBgenero.TabIndex = 10
+        Me.CMBgenero.UseWaitCursor = True
+        '
+        'TXTcantidad
+        '
+        Me.TXTcantidad.Location = New System.Drawing.Point(179, 234)
+        Me.TXTcantidad.Name = "TXTcantidad"
+        Me.TXTcantidad.Size = New System.Drawing.Size(245, 27)
+        Me.TXTcantidad.TabIndex = 9
+        Me.TXTcantidad.UseWaitCursor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(92, 237)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(91, 21)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Cantidad:"
+        Me.Label5.UseWaitCursor = True
+        '
         'CMBeditorial
         '
         Me.CMBeditorial.FormattingEnabled = True
-        Me.CMBeditorial.Items.AddRange(New Object() {"Ediciones Susaeta Guat", "Editoriales Sur S.A."})
-        Me.CMBeditorial.Location = New System.Drawing.Point(179, 201)
+        Me.CMBeditorial.Items.AddRange(New Object() {"Alianza", "Ariel", "Catedra", "Tirant Lo Blanch", "Akal"})
+        Me.CMBeditorial.Location = New System.Drawing.Point(179, 179)
         Me.CMBeditorial.Name = "CMBeditorial"
         Me.CMBeditorial.Size = New System.Drawing.Size(245, 28)
         Me.CMBeditorial.TabIndex = 7
         Me.CMBeditorial.UseWaitCursor = True
         '
-        'TXTgenero
-        '
-        Me.TXTgenero.Location = New System.Drawing.Point(179, 151)
-        Me.TXTgenero.Name = "TXTgenero"
-        Me.TXTgenero.Size = New System.Drawing.Size(245, 27)
-        Me.TXTgenero.TabIndex = 6
-        Me.TXTgenero.UseWaitCursor = True
-        '
         'TXTautor
         '
-        Me.TXTautor.Location = New System.Drawing.Point(179, 99)
+        Me.TXTautor.Location = New System.Drawing.Point(179, 75)
         Me.TXTautor.Name = "TXTautor"
         Me.TXTautor.Size = New System.Drawing.Size(245, 27)
         Me.TXTautor.TabIndex = 5
@@ -121,7 +145,7 @@ Partial Class libros
         '
         'TXTtitulo
         '
-        Me.TXTtitulo.Location = New System.Drawing.Point(179, 45)
+        Me.TXTtitulo.Location = New System.Drawing.Point(179, 21)
         Me.TXTtitulo.Name = "TXTtitulo"
         Me.TXTtitulo.Size = New System.Drawing.Size(245, 27)
         Me.TXTtitulo.TabIndex = 4
@@ -130,7 +154,7 @@ Partial Class libros
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(92, 208)
+        Me.Label4.Location = New System.Drawing.Point(92, 186)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(82, 21)
         Me.Label4.TabIndex = 3
@@ -175,6 +199,7 @@ Partial Class libros
         Me.DATAlibros.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.DATAlibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DATAlibros.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
+        Me.DATAlibros.Cursor = System.Windows.Forms.Cursors.WaitCursor
         Me.DATAlibros.Location = New System.Drawing.Point(111, 397)
         Me.DATAlibros.Name = "DATAlibros"
         Me.DATAlibros.RowHeadersWidth = 51
@@ -233,6 +258,7 @@ Partial Class libros
         Me.BTNlimpiar.TabIndex = 15
         Me.BTNlimpiar.Text = "Limpiar Entradas"
         Me.BTNlimpiar.UseVisualStyleBackColor = False
+        Me.BTNlimpiar.UseWaitCursor = True
         '
         'libros
         '
@@ -248,6 +274,7 @@ Partial Class libros
         Me.Controls.Add(Me.BTNmodificar)
         Me.Controls.Add(Me.BTNagregar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Cursor = System.Windows.Forms.Cursors.WaitCursor
         Me.Font = New System.Drawing.Font("Berlin Sans FB", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "libros"
@@ -265,7 +292,6 @@ Partial Class libros
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents CMBeditorial As ComboBox
-    Friend WithEvents TXTgenero As TextBox
     Friend WithEvents TXTautor As TextBox
     Friend WithEvents TXTtitulo As TextBox
     Friend WithEvents Label4 As Label
@@ -279,4 +305,7 @@ Partial Class libros
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents BTNregresar As Button
     Friend WithEvents BTNlimpiar As Button
+    Friend WithEvents TXTcantidad As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents CMBgenero As ComboBox
 End Class

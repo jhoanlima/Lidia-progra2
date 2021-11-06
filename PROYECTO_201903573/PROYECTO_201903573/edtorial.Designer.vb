@@ -32,13 +32,13 @@ Partial Class edtorial
         Me.BTNmodificar = New System.Windows.Forms.Button()
         Me.BTNeliminar = New System.Windows.Forms.Button()
         Me.DATAeditorial = New System.Windows.Forms.DataGridView()
+        Me.BTNregresar = New System.Windows.Forms.Button()
+        Me.BTNlimpiar = New System.Windows.Forms.Button()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BTNregresar = New System.Windows.Forms.Button()
-        Me.TXTtelefono = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BTNlimpiar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TXTtelefono = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DATAeditorial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -141,6 +141,28 @@ Partial Class edtorial
         Me.DATAeditorial.Size = New System.Drawing.Size(1132, 257)
         Me.DATAeditorial.TabIndex = 5
         '
+        'BTNregresar
+        '
+        Me.BTNregresar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BTNregresar.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNregresar.Location = New System.Drawing.Point(994, 630)
+        Me.BTNregresar.Name = "BTNregresar"
+        Me.BTNregresar.Size = New System.Drawing.Size(199, 60)
+        Me.BTNregresar.TabIndex = 13
+        Me.BTNregresar.Text = "REGRESAR"
+        Me.BTNregresar.UseVisualStyleBackColor = False
+        '
+        'BTNlimpiar
+        '
+        Me.BTNlimpiar.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BTNlimpiar.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BTNlimpiar.Location = New System.Drawing.Point(526, 633)
+        Me.BTNlimpiar.Name = "BTNlimpiar"
+        Me.BTNlimpiar.Size = New System.Drawing.Size(203, 57)
+        Me.BTNlimpiar.TabIndex = 14
+        Me.BTNlimpiar.Text = "Limpiar Entradas"
+        Me.BTNlimpiar.UseVisualStyleBackColor = False
+        '
         'Nombre
         '
         Me.Nombre.HeaderText = "Nombre"
@@ -155,33 +177,6 @@ Partial Class edtorial
         Me.Column1.Name = "Column1"
         Me.Column1.Width = 125
         '
-        'BTNregresar
-        '
-        Me.BTNregresar.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.BTNregresar.Font = New System.Drawing.Font("Berlin Sans FB", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNregresar.Location = New System.Drawing.Point(994, 630)
-        Me.BTNregresar.Name = "BTNregresar"
-        Me.BTNregresar.Size = New System.Drawing.Size(199, 60)
-        Me.BTNregresar.TabIndex = 13
-        Me.BTNregresar.Text = "REGRESAR"
-        Me.BTNregresar.UseVisualStyleBackColor = False
-        '
-        'TXTtelefono
-        '
-        Me.TXTtelefono.Location = New System.Drawing.Point(159, 169)
-        Me.TXTtelefono.Name = "TXTtelefono"
-        Me.TXTtelefono.Size = New System.Drawing.Size(292, 27)
-        Me.TXTtelefono.TabIndex = 6
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(59, 172)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 21)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Telefono:"
-        '
         'Column2
         '
         Me.Column2.HeaderText = "Telefono"
@@ -189,16 +184,21 @@ Partial Class edtorial
         Me.Column2.Name = "Column2"
         Me.Column2.Width = 125
         '
-        'BTNlimpiar
+        'Label4
         '
-        Me.BTNlimpiar.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.BTNlimpiar.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.BTNlimpiar.Location = New System.Drawing.Point(526, 633)
-        Me.BTNlimpiar.Name = "BTNlimpiar"
-        Me.BTNlimpiar.Size = New System.Drawing.Size(203, 57)
-        Me.BTNlimpiar.TabIndex = 14
-        Me.BTNlimpiar.Text = "Limpiar Entradas"
-        Me.BTNlimpiar.UseVisualStyleBackColor = False
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(59, 169)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 21)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Telefono:"
+        '
+        'TXTtelefono
+        '
+        Me.TXTtelefono.Location = New System.Drawing.Point(159, 163)
+        Me.TXTtelefono.Name = "TXTtelefono"
+        Me.TXTtelefono.Size = New System.Drawing.Size(292, 27)
+        Me.TXTtelefono.TabIndex = 6
         '
         'edtorial
         '
@@ -234,11 +234,11 @@ Partial Class edtorial
     Friend WithEvents BTNmodificar As Button
     Friend WithEvents BTNeliminar As Button
     Friend WithEvents DATAeditorial As DataGridView
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents BTNregresar As Button
+    Friend WithEvents BTNlimpiar As Button
     Friend WithEvents TXTtelefono As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents BTNlimpiar As Button
 End Class

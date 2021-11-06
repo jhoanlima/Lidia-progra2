@@ -25,12 +25,12 @@ Partial Class Prestados
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DATAprestados = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BTNdevolver = New System.Windows.Forms.Button()
         Me.BTNregresar = New System.Windows.Forms.Button()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DATAprestados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,34 +68,6 @@ Partial Class Prestados
         Me.DATAprestados.Size = New System.Drawing.Size(990, 307)
         Me.DATAprestados.TabIndex = 2
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Título"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Autor"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Género"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 125
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Editorial"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
         'BTNdevolver
         '
         Me.BTNdevolver.BackColor = System.Drawing.Color.PaleGreen
@@ -118,6 +90,34 @@ Partial Class Prestados
         Me.BTNregresar.Text = "REGRESAR"
         Me.BTNregresar.UseVisualStyleBackColor = False
         Me.BTNregresar.UseWaitCursor = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Editorial"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Género"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Autor"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Título"
+        Me.Column1.MinimumWidth = 10
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
         '
         'Prestados
         '
@@ -145,10 +145,10 @@ Partial Class Prestados
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents DATAprestados As DataGridView
+    Friend WithEvents BTNdevolver As Button
+    Friend WithEvents BTNregresar As Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents BTNdevolver As Button
-    Friend WithEvents BTNregresar As Button
 End Class
